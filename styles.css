@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+body { margin: 0; font: 14px Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
+button { border: 0; cursor: pointer; }
+.layout { max-width: 1260px; min-height: 100vh; }
+.left { width: 234px; flex-shrink: 0; min-height: 100vh; }
+.logo { margin: 0 0 12px 10px; }
+.nav-link { padding: 7px 4px; }
+.nav-link:hover { color: #1d9bf0; }
+.tweet-btn { width: 100%; padding: 10px; }
+.profile { font-size: 12px; }
+.avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; flex-shrink: 0; background: #eee; }
+.feed { width: 486px; flex-shrink: 0; }
+.grow { flex: 1; min-width: 0; }
+.small-tweet { padding: 7px 16px; }
+.post-text { font-size: 11px; line-height: 1.45; margin: 5px 0 10px; overflow-wrap: anywhere; }
+.actions { font-size: 12px; max-width: 340px; }
+.pink { color: #e0245e; }
+.food { width: 100%; height: 194px; object-fit: cover; border-radius: 12px; margin-bottom: 8px; }
+.right { width: 310px; flex-shrink: 0; }
+.search { width: 100%; border: 0; outline: 0; font-size: 11px; }
+.panel { overflow: hidden; }
+.trend { display: flex; flex-direction: column; gap: 3px; }
+.trend small, .suggestion small, .footer { font-size: 10px; }
+.trend small { color: #657786; }
+.show { font-size: 11px; }
+.follow { font-size: 10px; font-weight: bold; padding: 6px 12px; margin-left: auto; }
+.suggestion { font-size: 11px; }
+.footer { line-height: 1.8; }
+
+

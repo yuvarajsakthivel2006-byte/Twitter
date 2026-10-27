@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Feed</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-gray-900">
+  <div class="layout mx-auto flex">
+    <aside class="left border-r p-4 flex flex-col justify-between">
+      <div>
+        <h2 class="logo text-sky-500 font-bold text-2xl"><img src="assets/twiter-icon.png" alt=""></h2>
+        <nav class="space-y-3 mt-5">
+          <a class="nav-link block font-bold flex gap-2 items-center" href="#"> <img src="/assets/home-icon.png" alt=""> Home</a>
+          <a class="nav-link block flex gap-2 items-center" href="#"> <img src="assets/hash-icon.png" alt=""> Explore</a>
+          <a class="nav-link block flex gap-2 items-center" href="#"><img src="assets/bell-icon.png" alt=""> Notifications</a>
+          <a class="nav-link block flex gap-2 items-center" href="#"><img src="assets/message-icon.png" alt=""> Messages</a>
+          <a class="nav-link block flex gap-2 items-center" href="#"><img src="assets/bookmark-icon.png" alt=""> Bookmarks</a>
+          <a class="nav-link block flex gap-2 items-center" href="#"><img src="assets/list-icon.png" alt=""> Lists</a>
+          <a class="nav-link block flex gap-2 items-center" href="#"><img src="assets/profiel-icon.png" alt=""> Profile</a>
+          <a class="nav-link block flex gap-2 items-center" href="#"><img src="assets/more-icon.png" alt=""> More</a>
+        </nav>
+        <button class="tweet-btn mt-5 rounded-full bg-sky-500 text-white font-bold">Tweet</button>
+      </div>
+      <div class="profile flex items-center gap-2">
+        <img src="assets/profile-1.png" alt="" class="avatar">
+        <div><b>Bobur</b><small class="block text-gray-500">@bobur_mavlonov</small></div>
+      </div>
+    </aside>
+
+    <main class="feed border-r">
+      <header class="border-b p-3 flex justify-between font-bold">Home <span>✧</span></header>
+      <section class="composer border-b p-3 flex gap-3">
+        <img src="assets/profile-1.png" alt="" class="avatar">
+        <div class="grow">
+          <p class="text-gray-500 mb-4">What’s happening?</p>
+          <div class="flex justify-between items-center">
+            <span class="text-sky-500">▧　GIF　☷　☺　◷</span>
+            <button class="small-tweet rounded-full bg-sky-300 text-white font-bold">Tweet</button>
+          </div>
+        </div>
+      </section>
+
+      <article class="post border-b p-3 flex gap-3">
+        <img src="assets/profile-2.png" alt="" class="avatar">
+        <div class="grow">
+          <p class="text-xs"><b>Designsta</b> <span class="text-gray-500">@inner · 25m</span></p>
+          <p class="post-text">Twitterdagi ayol-erkak qarama-qarshiliklaringdan o'zinglar zerikmadinglarmi?</p>
+          <div class="actions flex justify-between text-gray-500">♡ 10 <span>⇄ 1</span> ♡ 8 <span>♧</span> ▥</div>
+        </div>
+      </article>
+
+      <article class="post border-b p-3 flex gap-3">
+        <img src="assets/profile-3.png" alt="" class="avatar">
+        <div class="grow">
+          <p class="text-xs"><b>cloutexhibition</b> <span class="text-gray-500">@RajLahoti · 22m</span></p>
+          <p class="post-text">YPIP dasturining bu yilgi sezoni ham o’z nihoyasiga yetmoqda. Mentorlik davomida talaba va yangi bitiruvchilarni o’sayotganini ko’rib hursand bo’ladi odam.</p>
+          <div class="actions flex justify-between text-gray-500">♡ <span class="pink">⇄ 5</span> <span class="pink">♥ 9</span> ♧ ▥</div>
+        </div>
+      </article>
+
+      <article class="post border-b p-3 flex gap-3">
+        <img src="assets/profile-4.png" alt="" class="avatar">
+        <div class="grow">
+          <p class="text-xs"><b>CreativePhoto</b> <span class="text-gray-500">@cloutexhibition · 1h</span></p>
+          <p class="post-text">Обетда.....<br>Кечиринглар</p>
+          <img src="assets/banner-food.png" alt="Grilled food" class="food">
+          <div class="actions flex justify-between text-gray-500">♡ 10 <span>⇄ 1</span> ♡ 8 <span>♧</span> ▥</div>
+        </div>
+      </article>
+    </main>
+
+    <aside class="right p-3">
+      <input class="search rounded-full bg-gray-100 px-4 py-2" type="search" placeholder="⌕  Search Twitter">
+      <section class="panel rounded-xl bg-gray-50 mt-3">
+        <h3 class="font-bold p-3">Trends for you　⚙</h3>
+        <div class="trend p-3"><small>Trending in Germany</small><b>Revolution</b><small>50.4K Tweets</small></div>
+        <div class="trend p-3"><small>Trending in Germany</small><b>Revolution</b><small>50.4K Tweets</small></div>
+        <div class="trend p-3"><small>Trending in Germany</small><b>Revolution</b><small>50.4K Tweets</small></div>
+        <a class="show block p-3 text-sky-500" href="#">Show more</a>
+      </section>
+      <section class="panel rounded-xl bg-gray-50 mt-3">
+        <h3 class="font-bold p-3">You might like</h3>
+        <div class="suggestion p-2 flex items-center gap-2">
+          <img src="assets/profile-6.png" alt="" class="avatar">
+          <div><b>Mushtariy</b><small class="block text-gray-500">@Mushtar565266</small></div>
+          <button class="follow rounded-full bg-black text-white">Follow</button>
+        </div>
+        <div class="suggestion p-2 flex items-center gap-2">
+          <img src="assets/profile-7.png" alt="" class="avatar">
+          <div><b>Shuhratbek</b><small class="block text-gray-500">@mrshukhrat</small></div>
+          <button class="follow rounded-full bg-black text-white">Follow</button>
+        </div>
+        <a class="show block p-3 text-sky-500" href="#">Show more</a>
+      </section>
+      <footer class="footer text-gray-500 mt-4">
+        Terms of Service　Privacy Policy　Cookie Policy<br>
+        Imprint　Ads Info　More ···　© 2021 Twitter, Inc.
+      </footer>
+    </aside>
+  </div>
+</body>
+</html>
